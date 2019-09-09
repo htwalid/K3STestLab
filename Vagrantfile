@@ -155,8 +155,8 @@ SHELL
 
 Vagrant.configure(2) do |config|
 
-  # node_num=3
-  node_num=2
+  node_num=3
+  # node_num=2
 
   (1..node_num).each do |i|
     if i == 1 then
