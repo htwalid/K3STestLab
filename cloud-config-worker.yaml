@@ -1,0 +1,17 @@
+run_cmd:
+- "sudo adduser --disabled-password --gecos \"\" vagrant"
+- "echo vagrant:vagrant | chpasswd"
+- "mkdir -p /home/vagrant/.ssh"
+- "chmod 0700 /home/vagrant/.ssh"
+- "wget --no-check-certificate https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub -O /home/vagrant/.ssh/authorized_keys"
+- "chmod 0600 /home/vagrant/.ssh/authorized_keys"
+- "chown -R vagrant /home/vagrant/.ssh"
+- "echo 'vagrant  ALL=(ALL:ALL) ALL' >> /etc/sudoers"
+k3os:
+  server_url : https://10.7.1.10:6443
+  k3s_args:
+  - agent
+  - "--no-deploy servicelb"
+  - "--no-deploy traefik"
+  password: rancher
+  token: htwalid
