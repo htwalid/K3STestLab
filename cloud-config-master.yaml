@@ -12,7 +12,6 @@ k3os:
   - server
   - "--no-deploy servicelb"
   - "--no-deploy traefik"
-  - "--node-ip 192.168.33.11"
   password: rancher
   token: htwalid
   password: rancher
