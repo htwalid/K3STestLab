@@ -14,4 +14,3 @@ k3os:
   - "--no-deploy traefik"
   password: rancher
   token: htwalid
-  password: rancher
