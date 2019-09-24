@@ -9,8 +9,5 @@ run_cmd:
 - "echo 'vagrant  ALL=(ALL:ALL) ALL' >> /etc/sudoers"
 k3os:
   server_url : https://10.7.1.10:6443
-  k3s_args:
-  - agent
-  - "--no-flannel"
   password: rancher
   token: htwalid
