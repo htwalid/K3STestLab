@@ -11,7 +11,6 @@ k3os:
   server_url : https://10.7.1.10:6443
   k3s_args:
   - agent
-  - "--no-deploy servicelb"
-  - "--no-deploy traefik"
+  - "--no-flannel"
   password: rancher
   token: htwalid
