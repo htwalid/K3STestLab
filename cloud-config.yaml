@@ -1,0 +1,6 @@
+ssh_authorized_keys:
+- "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAzEAt3GlsqSiZaJ8wfjn7VZXD1+pFyI2vSB33FmtG1iHt4/Wo8Mu+w+1A+cNwflfE9gtkfro8Wdrz1nfnQc/vuIlHKbFLzD4WIm7RMFdqE/Z2pDPpu8Fpnt5QxtuidwRVqXUeII4c6iL2XjcXZEQISiUo5iJQ8M2v+tmNX9YW4lM="
+- "github:htwalid"
+k3os:
+  password: rancher
+  token: htwalid
